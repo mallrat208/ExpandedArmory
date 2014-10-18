@@ -2,8 +2,10 @@ package mr208.WeaponVault.AE2;
 
 import appeng.api.AEApi;
 import ckathode.weaponmod.BalkonsWeaponMod;
+import ckathode.weaponmod.entity.projectile.MaterialRegistry;
 import ckathode.weaponmod.item.*;
 import cpw.mods.fml.common.registry.GameRegistry;
+import mr208.WeaponVault.CustomMaterials;
 import mr208.WeaponVault.Items.WVItemFlail;
 import mr208.WeaponVault.Items.WVItemMelee;
 import mr208.WeaponVault.Items.WVItemMusket;
@@ -44,6 +46,9 @@ public class AE2Integration {
     }
     private static void initNether()
     {
+        MaterialRegistry.registerCustomProjectileMaterial(new CustomMaterials(Materials.netherQuartz, 0xD9D4CFFF));
+
+
         battleaxeQuartz = new WVItemMelee("battleaxe.quartz", new MeleeCompBattleaxe(Materials.netherQuartz));
         boomerangQuartz = new WVItemMelee("boomerang.quartz", new MeleeCompBoomerang(Materials.netherQuartz));
         flailQuartz = new WVItemFlail("flail.quartz", Materials.netherQuartz);
@@ -69,6 +74,7 @@ public class AE2Integration {
 
     private static void initCertus()
     {
+        MaterialRegistry.registerCustomProjectileMaterial(new CustomMaterials(Materials.certusQuartz, 0x91CDEAFF));
 
         Item certus = AEApi.instance().materials().materialCertusQuartzCrystal.item();
 
