@@ -14,7 +14,7 @@ import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.oredict.OreDictionary;
 
 
-@Mod(modid = WVRef.MOD_ID, name= WVRef.MOD_NAME, version="1.0", dependencies = "after:Botania;after:appliedenergistics2;after:Thaumcraft;required-after:weaponmod")
+@Mod(modid = WVRef.MOD_ID, name= WVRef.MOD_NAME, version=WVRef.MOD_VER, dependencies = "after:Botania;after:appliedenergistics2;after:Thaumcraft;required-after:weaponmod")
 public class WeaponVault {
 
     @Mod.Instance

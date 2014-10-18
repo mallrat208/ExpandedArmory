@@ -1,13 +1,12 @@
 [
 {
-  "modid": "examplemod",
-  "name": "Example Mod",
-  "description": "Example placeholder mod.",
-  "version": "${version}",
+  "modid": "weaponvault",
+  "name": "Weapons Vault",
+  "description": "Weapons Vault is an add-on for Balkon's WeaponMod that aims to expand the amount of materials that can be used to make Balkon's Weaponry",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
-  "authorList": ["ExampleDude"],
+  "authorList": ["mallrat208"],
   "credits": "The Forge and FML guys, for making this example",
   "logoFile": "",
   "screenshots": [],
