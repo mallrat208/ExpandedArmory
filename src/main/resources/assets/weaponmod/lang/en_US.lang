@@ -1,0 +1,113 @@
+item.battleaxe.thaumium.name=Thaumium Battleaxe
+item.boomerang.thaumium.name=Thaumium Boomerang
+item.flail.thaumium.name=Thaumium Flail
+item.halberd.thaumium.name=Thaumium Halberd
+item.katana.thaumium.name=Thaumium Katana
+item.knife.thaumium.name=Thaumium Knife
+item.musketbayonet.thaumium.name=Musket with Thaumium Bayonet
+item.spear.thaumium.name=Thaumium Spear
+item.warhammer.thaumium.name=Thaumium Warhammer
+
+item.battleaxe.void.name=Void Battleaxe
+item.boomerang.void.name=Void Boomerang
+item.flail.void.name=Void Flail
+item.halberd.void.name=Void Halberd
+item.katana.void.name=Void Katana
+item.knife.void.name=Void Knife
+item.musketbayonet.void.name=Musket with Void Bayonet
+item.spear.void.name=Void Spear
+item.warhammer.void.name=Void Warhammer
+
+item.battleaxe.certus.name=Certus Quartz Battleaxe
+item.boomerang.certus.name=Certus Quartz Boomerang
+item.flail.certus.name=Certus Quartz Flail
+item.halberd.certus.name=Certus Quartz Halberd
+item.katana.certus.name=Certus Quartz Katana
+item.knife.certus.name=Certus Quartz Knife
+item.musketbayonet.certus.name=Musket with Certus Quartz Bayonet
+item.spear.certus.name=Certus Quartz Spear
+item.warhammer.certus.name=Certus Quartz Warhammer
+
+item.battleaxe.quartz.name=Nether Quartz Battleaxe
+item.boomerang.quartz.name=Nether Quartz Boomerang
+item.flail.quartz.name=Nether Quartz Flail
+item.halberd.quartz.name=Nether Quartz Halberd
+item.katana.quartz.name=Nether Quartz Katana
+item.knife.quartz.name=Nether Quartz Knife
+item.musketbayonet.quartz.name=Musket with Nether Quartz Bayonet
+item.spear.quartz.name=Nether Quartz Spear
+item.warhammer.quartz.name=Nether Quartz Warhammer
+
+item.battleaxe.bronze.name=Bronze Battleaxe
+item.boomerang.bronze.name=Bronze Boomerang
+item.flail.bronze.name=Bronze Flail
+item.halberd.bronze.name=Bronze Halberd
+item.katana.bronze.name=Bronze Katana
+item.knife.bronze.name=Bronze Knife
+item.musketbayonet.bronze.name=Musket with Bronze Bayonet
+item.spear.bronze.name=Bronze Spear
+item.warhammer.bronze.name=Bronze Warhammer
+
+item.battleaxe.steel.name=Steel Battleaxe
+item.boomerang.steel.name=Steel Boomerang
+item.flail.steel.name=Steel Flail
+item.halberd.steel.name=Steel Halberd
+item.katana.steel.name=Steel Katana
+item.knife.steel.name=Steel Knife
+item.musketbayonet.steel.name=Musket with Steel Bayonet
+item.spear.steel.name=Steel Spear
+item.warhammer.steel.name=Steel Warhammer
+
+item.battleaxe.brass.name=Brass Battleaxe
+item.boomerang.brass.name=Brass Boomerang
+item.flail.brass.name=Brass Flail
+item.halberd.brass.name=Brass Halberd
+item.katana.brass.name=Brass Katana
+item.knife.brass.name=Brass Knife
+item.musketbayonet.brass.name=Musket with Brass Bayonet
+item.spear.brass.name=Brass Spear
+item.warhammer.brass.name=Brass Warhammer
+
+item.battleaxe.gildediron.name=Gilded Iron Battleaxe
+item.boomerang.gildediron.name=Gilded Iron Boomerang
+item.flail.gildediron.name=Gilded Iron Flail
+item.halberd.gildediron.name=Gilded Iron Halberd
+item.katana.gildediron.name=Gilded Iron Katana
+item.knife.gildediron.name=Gilded Iron Knife
+item.musketbayonet.gildediron.name=Musket with Gilded Iron Bayonet
+item.spear.gildediron.name=Gilded Iron Spear
+item.warhammer.gildediron.name=Gilded Iron Warhammer
+
+item.battleaxe.manasteel.name=Manasteel Battleaxe
+item.boomerang.manasteel.name=Manasteel Boomerang
+item.flail.manasteel.name=Manasteel Flail
+item.halberd.manasteel.name=Manasteel Halberd
+item.katana.manasteel.name=Manasteel Katana
+item.knife.manasteel.name=Manasteel Knife
+item.musketbayonet.manasteel.name=Musket with Manasteel Bayonet
+item.spear.manasteel.name=Manasteel Spear
+item.warhammer.manasteel.name=Manasteel Warhammer
+
+item.battleaxe.terrasteel.name=Terrasteel Battleaxe
+item.boomerang.terrasteel.name=Terrasteel Boomerang
+item.flail.terrasteel.name=Terrasteel Flail
+item.halberd.terrasteel.name=Terrasteel Halberd
+item.katana.terrasteel.name=Terrasteel Katana
+item.knife.terrasteel.name=Terrasteel Knife
+item.musketbayonet.terrasteel.name=Musket with Terrasteel Bayonet
+item.spear.terrasteel.name=Terrasteel Spear
+item.warhammer.terrasteel.name=Terrasteel Warhammer
+
+item.battleaxe.elementium.name=Elementium Battleaxe
+item.boomerang.elementium.name=Elementium Boomerang
+item.flail.elementium.name=Elementium Flail
+item.halberd.elementium.name=Elementium Halberd
+item.katana.elementium.name=Elementium Katana
+item.knife.elementium.name=Elementium Knife
+item.musketbayonet.elementium.name=Musket with Elementium Bayonet
+item.spear.elementium.name=Elementium Spear
+item.warhammer.elementium.name=Elementium Warhammer
+
+item.katana.shrouded.name=Aberrant Shrouded Blade
+
+
