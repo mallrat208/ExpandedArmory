@@ -13,9 +13,6 @@ import thaumcraft.api.ItemApi;
 import thaumcraft.api.ThaumcraftApi;
 import vazkii.botania.api.BotaniaAPI;
 
-/**
- * Created by Andrew on 10/16/2014.
- */
 public class WVItemMusket extends ItemMusket implements IWeaponMaterialCheck {
     private final int materialID;
     public WVItemMusket(String id, MeleeComponent meleecomponent, Item bayonetitem) {

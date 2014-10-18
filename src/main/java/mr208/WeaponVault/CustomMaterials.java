@@ -6,9 +6,6 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import thaumcraft.api.ThaumcraftApi;
 
-/**
- * Created by Andrew on 10/16/2014.
- */
 public class CustomMaterials implements ICustomProjectileMaterials {
 
     public final Item.ToolMaterial customMat;

@@ -5,9 +5,6 @@ import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import vazkii.botania.api.mana.ManaItemHandler;
 
-/**
- * Created by Andrew on 10/17/2014.
- */
 public class ManaHelper {
 
     public static void  damageItem(ItemStack item, int damage, EntityLivingBase player, int cost)

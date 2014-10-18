@@ -14,7 +14,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import vazkii.botania.api.BotaniaAPI;
 import net.minecraft.item.Item;
-import vazkii.botania.common.Botania;
 
 public class BotaniaIntegration {
 

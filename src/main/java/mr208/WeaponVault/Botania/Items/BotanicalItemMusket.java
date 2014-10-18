@@ -1,6 +1,5 @@
 package mr208.WeaponVault.Botania.Items;
 
-import ckathode.weaponmod.item.ItemMusket;
 import ckathode.weaponmod.item.MeleeComponent;
 import mr208.WeaponVault.Botania.ManaHelper;
 import mr208.WeaponVault.Items.WVItemMusket;

@@ -2,7 +2,6 @@ package mr208.WeaponVault.Thaumcraft.Items;
 
 import ckathode.weaponmod.item.ItemMusket;
 import ckathode.weaponmod.item.MeleeComponent;
-import mr208.WeaponVault.IWeaponMaterialCheck;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;

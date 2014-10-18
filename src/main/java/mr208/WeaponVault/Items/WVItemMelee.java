@@ -3,7 +3,6 @@ package mr208.WeaponVault.Items;
 import appeng.api.AEApi;
 import ckathode.weaponmod.item.ItemMelee;
 import ckathode.weaponmod.item.MeleeComponent;
-import cpw.mods.fml.common.registry.GameRegistry;
 import mr208.WeaponVault.IWeaponMaterialCheck;
 import mr208.WeaponVault.Materials;
 import net.minecraft.init.Items;

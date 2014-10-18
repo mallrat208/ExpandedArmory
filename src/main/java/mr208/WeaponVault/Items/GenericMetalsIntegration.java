@@ -1,10 +1,7 @@
 package mr208.WeaponVault.Items;
 
 
-import ckathode.weaponmod.item.ItemMelee;
-import ckathode.weaponmod.item.MeleeCompBattleaxe;
 import net.minecraft.item.Item;
-import net.minecraftforge.common.util.EnumHelper;
 
 public class GenericMetalsIntegration {
 

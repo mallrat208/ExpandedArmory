@@ -8,9 +8,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import vazkii.botania.api.mana.IManaUsingItem;
 
-/**
- * Created by Andrew on 10/17/2014.
- */
 public class BotanicalItemFlail extends WVItemFlail implements IManaUsingItem {
     private static final int MANA_PER_DMG = 51;
     public BotanicalItemFlail(String id, ToolMaterial toolmaterial) {

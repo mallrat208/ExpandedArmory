@@ -1,6 +1,5 @@
 package mr208.WeaponVault;
 
-import com.sun.org.apache.xpath.internal.operations.Bool;
 import net.minecraftforge.common.config.Configuration;
 
 import java.io.File;

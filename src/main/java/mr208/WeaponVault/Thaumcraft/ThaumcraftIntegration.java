@@ -25,7 +25,6 @@ import ckathode.weaponmod.BalkonsWeaponMod;
 import ckathode.weaponmod.item.*;
 
 import thaumcraft.api.ThaumcraftApi;
-import thaumcraft.api.ThaumcraftApiHelper;
 
 public class ThaumcraftIntegration {
 

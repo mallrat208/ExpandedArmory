@@ -1,7 +1,5 @@
 package mr208.WeaponVault.Thaumcraft.Items;
 
-import ckathode.weaponmod.item.ItemFlail;
-import mr208.WeaponVault.IWeaponMaterialCheck;
 import mr208.WeaponVault.Items.WVItemFlail;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;

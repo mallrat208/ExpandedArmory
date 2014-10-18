@@ -4,9 +4,6 @@ import ckathode.weaponmod.entity.projectile.MaterialRegistry;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 
-/**
- * Created by Andrew on 10/17/2014.
- */
 public class Materials {
 
     public static Item.ToolMaterial netherQuartz;

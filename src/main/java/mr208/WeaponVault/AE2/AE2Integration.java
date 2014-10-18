@@ -2,10 +2,8 @@ package mr208.WeaponVault.AE2;
 
 import appeng.api.AEApi;
 import ckathode.weaponmod.BalkonsWeaponMod;
-import ckathode.weaponmod.entity.projectile.MaterialRegistry;
 import ckathode.weaponmod.item.*;
 import cpw.mods.fml.common.registry.GameRegistry;
-import mr208.WeaponVault.CustomMaterials;
 import mr208.WeaponVault.Items.WVItemFlail;
 import mr208.WeaponVault.Items.WVItemMelee;
 import mr208.WeaponVault.Items.WVItemMusket;
