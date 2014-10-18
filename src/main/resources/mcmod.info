@@ -1,8 +1,8 @@
 [
 {
-  "modid": "weaponvault",
-  "name": "Weapons Vault",
-  "description": "Weapons Vault is an add-on for Balkon's WeaponMod that aims to expand the amount of materials that can be used to make Balkon's Weaponry",
+  "modid": "exparmory",
+  "name": "Expanded Armory",
+  "description": "Expanded Armory is an add-on for Balkon's WeaponMod that increases the number of materials that can be made into weapons",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",

@@ -17,9 +17,9 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.7.10-1.0"
-group= "mr208.WeaponVault" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "WeaponVault"
+version = "1.7.10-0.1.1"
+group= "mr208.ExpandedArmory" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "ExpandedArmory"
 
 minecraft {
     version = "1.7.10-10.13.1.1226"
