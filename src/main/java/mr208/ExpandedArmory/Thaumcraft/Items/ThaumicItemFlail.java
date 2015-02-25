@@ -9,7 +9,11 @@ import thaumcraft.api.IRepairable;
 public class ThaumicItemFlail extends ExArmItemFlail implements IRepairable
         {
             private EnumRarity rarity;
-            public ThaumicItemFlail(String id, ToolMaterial toolmaterial, EnumRarity eRare) {super(id, toolmaterial);this.rarity = eRare;}
+            public ThaumicItemFlail(String id, ToolMaterial toolmaterial, EnumRarity eRare)
+            {
+                super(id, toolmaterial);
+                this.rarity = eRare;
+            }
 
             public EnumRarity func_77613_e(ItemStack par1)
             {

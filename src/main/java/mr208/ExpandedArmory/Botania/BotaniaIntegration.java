@@ -14,6 +14,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import vazkii.botania.api.BotaniaAPI;
 import net.minecraft.item.Item;
+import vazkii.botania.common.item.ModItems;
 
 public class BotaniaIntegration {
 
@@ -34,6 +35,11 @@ public class BotaniaIntegration {
     private static void initManasteel()
     {
         MaterialRegistry.registerCustomProjectileMaterial(new CustomMaterials(BotaniaAPI.manasteelToolMaterial, 0x7DC3E5FF));
+        ItemStack manasteelIS = new ItemStack(ModItems.manaResource,1,0);
+        if(Item.ToolMaterial.valueOf("MANASTEEL").getRepairItemStack()==null)
+        {
+            Item.ToolMaterial.valueOf("MANASTEEL").setRepairItem(manasteelIS);
+        }
 
         battleaxeManasteel = new BotanicalItemMelee("battleaxe.manasteel", new MeleeCompBattleaxe(BotaniaAPI.manasteelToolMaterial));
         boomerangManasteel = new BotanicalItemMelee("boomerang.manasteel", new MeleeCompBoomerang(BotaniaAPI.manasteelToolMaterial));
@@ -56,15 +62,5 @@ public class BotaniaIntegration {
         GameRegistry.addRecipe(new ShapedOreRecipe(spearManasteel, "  #", " X ", "X  ", 'X', "livingwoodTwig", '#', "ingotManasteel"));
         GameRegistry.addRecipe(new ShapedOreRecipe(warhammerManasteel, "#X#", "#X#", " X ", 'X', "livingwoodTwig", '#', "ingotManasteel"));
 
-    }
-    private static void initTerrasteel()
-    {
-        MaterialRegistry.registerCustomProjectileMaterial(new CustomMaterials(BotaniaAPI.terrasteelToolMaterial, 0x79C958FF));
-
-
-    }
-    private static void initElementium()
-    {
-        MaterialRegistry.registerCustomProjectileMaterial(new CustomMaterials(BotaniaAPI.elementiumToolMaterial, 0xFFACFFFF));
     }
 }

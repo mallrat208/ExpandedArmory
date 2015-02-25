@@ -1,6 +1,8 @@
 package mr208.ExpandedArmory.Thaumcraft.Items;
 
 import ckathode.weaponmod.item.MeleeComponent;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 import mr208.ExpandedArmory.Items.ExArmItemMelee;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -10,13 +12,17 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.server.MinecraftServer;
+import net.minecraft.util.EnumChatFormatting;
+import net.minecraft.util.StatCollector;
 import net.minecraft.world.World;
 import thaumcraft.api.IRepairable;
 import thaumcraft.api.IWarpingGear;
 
+import java.util.List;
+
 public class VoidItemMelee extends ExArmItemMelee implements IRepairable, IWarpingGear {
     private final EnumRarity rarity;
-    public VoidItemMelee(String id, MeleeComponent meleecomponent,EnumRarity eRare) {
+    public VoidItemMelee(String id, MeleeComponent meleecomponent, EnumRarity eRare) {
         super(id, meleecomponent);
         this.rarity = eRare;
     }
@@ -38,13 +44,25 @@ public class VoidItemMelee extends ExArmItemMelee implements IRepairable, IWarpi
         {  stack.damageItem(-1, (EntityLivingBase)entity);  }
     }
 
-    public boolean onLeftClickEntity(ItemStack stack, EntityPlayer player, Entity entity)
+    @Override
+    public boolean hitEntity(ItemStack weapon, EntityLivingBase Victim, EntityLivingBase Attacker)
     {
-        if ((!player.capabilities.disableDamage) && ((entity instanceof EntityLivingBase)) && ((!(entity instanceof EntityPlayer)) || (MinecraftServer.getServer().isPVPEnabled()))) {
-            (
-                    (EntityLivingBase)entity).addPotionEffect(new PotionEffect(Potion.weakness.getId(), 80));
+        if(!Victim.worldObj.isRemote && (!(Victim instanceof EntityPlayer) || !(Attacker instanceof EntityPlayer) || MinecraftServer.getServer().isPVPEnabled()))
+        {
+        try {
+            Victim.addPotionEffect(new PotionEffect(Potion.weakness.getId(), 60));
         }
+        catch (Exception e)
+        {        }
+        }
+        return super.hitEntity(weapon, Victim,Attacker);
+    }
 
-        return super.onLeftClickEntity(stack, player, entity);
+    @SideOnly(Side.CLIENT)
+    @Override
+    public void addInformation(ItemStack weapon, EntityPlayer player, List list, boolean bool)
+    {
+        list.add(EnumChatFormatting.GOLD + StatCollector.translateToLocal("enchantment.special.sapless"));
+        super.addInformation(weapon,player,list,bool);
     }
 }

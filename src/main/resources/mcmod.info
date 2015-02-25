@@ -3,11 +3,12 @@
   "modid": "exparmory",
   "name": "Expanded Armory",
   "description": "Expanded Armory is an add-on for Balkon's WeaponMod that increases the number of materials that can be made into weapons",
+  "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",
   "updateUrl": "",
   "authorList": ["mallrat208"],
-  "credits": "The Forge and FML guys, for making this example",
+  "credits": "",
   "logoFile": "",
   "screenshots": [],
   "dependencies": []

@@ -15,6 +15,7 @@
 /.gradle
 /.settings
 /libs
+/API
 
 *.ipr
 *.iws

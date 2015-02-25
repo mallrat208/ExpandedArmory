@@ -34,7 +34,7 @@ public class ExpandedArmory {
     @Mod.EventHandler
     public void Init(FMLInitializationEvent event)
     {
-        Materials.initMaterials();
+        //Materials.initMaterials();
         if(ExArmConfig.enableBotania && Loader.isModLoaded("Botania")) BotaniaIntegration.initBotania();
         if(ExArmConfig.enableAEWeapons && Loader.isModLoaded("appliedenergistics2")) AE2Integration.initAE2();
         if(ExArmConfig.enableThaumcraftWeapons && Loader.isModLoaded("Thaumcraft")) ThaumcraftIntegration.initThaumcraft();

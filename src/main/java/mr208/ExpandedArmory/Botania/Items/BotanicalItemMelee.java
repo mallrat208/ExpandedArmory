@@ -4,11 +4,13 @@ import ckathode.weaponmod.item.MeleeComponent;
 import mr208.ExpandedArmory.Botania.ManaHelper;
 import mr208.ExpandedArmory.Items.ExArmItemMelee;
 import net.minecraft.block.Block;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import vazkii.botania.api.mana.IManaUsingItem;
-
+import vazkii.botania.api.mana.ManaItemHandler;
 
 
 public class BotanicalItemMelee extends ExArmItemMelee implements IManaUsingItem {
@@ -34,5 +36,12 @@ public class BotanicalItemMelee extends ExArmItemMelee implements IManaUsingItem
     @Override
     public boolean usesMana(ItemStack stack) {
         return true;
+    }
+
+    @Override
+    public void onUpdate(ItemStack weapon, World world, Entity player, int num, boolean bool)
+    {
+        if(!world.isRemote && player instanceof EntityPlayer && weapon.getItemDamage() >0 && ManaItemHandler.requestManaExactForTool(weapon, (EntityPlayer) player, MANA_PER_DMG * 2, true))
+            weapon.setItemDamage(weapon.getItemDamage()-1);
     }
 }

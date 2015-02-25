@@ -68,9 +68,6 @@ public class ExArmConfig {
         //Botania
         enableBotania = conf.getBoolean("1. Enable Botania Support","Botania",true,"Enables Manasteel, Terrasteel, and Elementium if enabled below");
         enableManaSteel = conf.getBoolean("2. Manasteel Weapons","Botania",true,"Enable Manasteel Weapons?");
-        enableTerraSteel = conf.getBoolean("3. Terrasteel Weapons","Botania",true,"Enable Terrasteel Weapons?");
-        enableElementium = conf.getBoolean("4. Elementium Weapons","Botania",true,"Enable Elementium Weapons?");
-
 
         if (conf.hasChanged())
         {conf.save(); }
