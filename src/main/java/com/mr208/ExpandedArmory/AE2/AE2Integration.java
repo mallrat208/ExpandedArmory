@@ -1,15 +1,15 @@
-package mr208.ExpandedArmory.AE2;
+package com.mr208.ExpandedArmory.AE2;
 
 import appeng.api.AEApi;
 import ckathode.weaponmod.BalkonsWeaponMod;
 import ckathode.weaponmod.entity.projectile.MaterialRegistry;
 import ckathode.weaponmod.item.*;
 import cpw.mods.fml.common.registry.GameRegistry;
-import mr208.ExpandedArmory.CustomMaterials;
-import mr208.ExpandedArmory.ExArmConfig;
-import mr208.ExpandedArmory.Items.ExArmItemFlail;
-import mr208.ExpandedArmory.Items.ExArmItemMelee;
-import mr208.ExpandedArmory.Items.ExArmItemMusket;
+import com.mr208.ExpandedArmory.CustomMaterials;
+import com.mr208.ExpandedArmory.ExArmConfig;
+import com.mr208.ExpandedArmory.Items.ExArmItemFlail;
+import com.mr208.ExpandedArmory.Items.ExArmItemMelee;
+import com.mr208.ExpandedArmory.Items.ExArmItemMusket;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;

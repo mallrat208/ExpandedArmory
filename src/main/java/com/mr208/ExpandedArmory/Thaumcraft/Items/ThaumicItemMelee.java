@@ -1,7 +1,7 @@
-package mr208.ExpandedArmory.Thaumcraft.Items;
+package com.mr208.ExpandedArmory.Thaumcraft.Items;
 
 import ckathode.weaponmod.item.MeleeComponent;
-import mr208.ExpandedArmory.Items.ExArmItemMelee;
+import com.mr208.ExpandedArmory.Items.ExArmItemMelee;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.ItemStack;
 import thaumcraft.api.IRepairable;

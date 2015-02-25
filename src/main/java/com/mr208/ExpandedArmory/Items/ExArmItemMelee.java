@@ -1,10 +1,9 @@
-package mr208.ExpandedArmory.Items;
+package com.mr208.ExpandedArmory.Items;
 
 import ckathode.weaponmod.item.ItemMelee;
 import ckathode.weaponmod.item.MeleeComponent;
-import mr208.ExpandedArmory.IWeaponMaterialCheck;
+import com.mr208.ExpandedArmory.IWeaponMaterialCheck;
 import net.minecraft.item.ItemStack;
-import thaumcraft.common.config.ConfigItems;
 
 public class ExArmItemMelee extends ItemMelee implements IWeaponMaterialCheck {
     private final int materialID;

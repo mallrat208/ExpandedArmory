@@ -1,30 +1,29 @@
-package mr208.ExpandedArmory.Thaumcraft;
+package com.mr208.ExpandedArmory.Thaumcraft;
 
 import ckathode.weaponmod.entity.projectile.MaterialRegistry;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 
-import mr208.ExpandedArmory.CustomMaterials;
-import mr208.ExpandedArmory.ExArmConfig;
+import com.mr208.ExpandedArmory.CustomMaterials;
+import com.mr208.ExpandedArmory.ExArmConfig;
 import net.minecraft.init.Items;
 import net.minecraft.item.EnumRarity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
 
-import mr208.ExpandedArmory.Thaumcraft.Items.ThaumicItemFlail;
-import mr208.ExpandedArmory.Thaumcraft.Items.ThaumicItemMelee;
-import mr208.ExpandedArmory.Thaumcraft.Items.ThaumicItemMusket;
-import mr208.ExpandedArmory.Thaumcraft.Items.VoidItemFlail;
-import mr208.ExpandedArmory.Thaumcraft.Items.VoidItemMelee;
-import mr208.ExpandedArmory.Thaumcraft.Items.VoidItemMusket;
+import com.mr208.ExpandedArmory.Thaumcraft.Items.ThaumicItemFlail;
+import com.mr208.ExpandedArmory.Thaumcraft.Items.ThaumicItemMelee;
+import com.mr208.ExpandedArmory.Thaumcraft.Items.ThaumicItemMusket;
+import com.mr208.ExpandedArmory.Thaumcraft.Items.VoidItemFlail;
+import com.mr208.ExpandedArmory.Thaumcraft.Items.VoidItemMelee;
+import com.mr208.ExpandedArmory.Thaumcraft.Items.VoidItemMusket;
 
 import net.minecraftforge.oredict.ShapedOreRecipe;
 
 import ckathode.weaponmod.BalkonsWeaponMod;
 import ckathode.weaponmod.item.*;
 
-import thaumcraft.api.ItemApi;
 import thaumcraft.api.ThaumcraftApi;
 
 public class ThaumcraftIntegration {

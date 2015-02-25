@@ -1,4 +1,4 @@
-package mr208.ExpandedArmory.Botania;
+package com.mr208.ExpandedArmory.Botania;
 
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;

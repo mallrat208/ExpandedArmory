@@ -1,4 +1,4 @@
-package mr208.ExpandedArmory.Items;
+package com.mr208.ExpandedArmory.Items;
 
 
 import net.minecraft.item.Item;

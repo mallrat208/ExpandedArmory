@@ -1,14 +1,14 @@
-package mr208.ExpandedArmory.Botania;
+package com.mr208.ExpandedArmory.Botania;
 
 import ckathode.weaponmod.BalkonsWeaponMod;
 import ckathode.weaponmod.entity.projectile.MaterialRegistry;
 import ckathode.weaponmod.item.*;
 import cpw.mods.fml.common.registry.GameRegistry;
-import mr208.ExpandedArmory.Botania.Items.BotanicalItemFlail;
-import mr208.ExpandedArmory.Botania.Items.BotanicalItemMelee;
-import mr208.ExpandedArmory.Botania.Items.BotanicalItemMusket;
-import mr208.ExpandedArmory.CustomMaterials;
-import mr208.ExpandedArmory.ExArmConfig;
+import com.mr208.ExpandedArmory.Botania.Items.BotanicalItemFlail;
+import com.mr208.ExpandedArmory.Botania.Items.BotanicalItemMelee;
+import com.mr208.ExpandedArmory.Botania.Items.BotanicalItemMusket;
+import com.mr208.ExpandedArmory.CustomMaterials;
+import com.mr208.ExpandedArmory.ExArmConfig;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.ShapedOreRecipe;

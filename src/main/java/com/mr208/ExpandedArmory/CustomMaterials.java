@@ -1,4 +1,4 @@
-package mr208.ExpandedArmory;
+package com.mr208.ExpandedArmory;
 
 import ckathode.weaponmod.entity.projectile.ICustomProjectileMaterials;
 import net.minecraft.item.Item;

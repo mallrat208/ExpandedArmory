@@ -14,17 +14,32 @@ buildscript {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
     }
 }
-
+apply plugin: 'java'
 apply plugin: 'forge'
 
-version = "1.7.10-1.0.1"
-group= "mr208.ExpandedArmory" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+ext.configFile = file "build.properties"
+
+configFile.withReader {
+	def prop = new Properties()
+	prop.load(it)
+	project.ext.config = new ConfigSlurper().parse prop
+	}
+	
+
+version = config.mod_version
+group= "com.com.mr208.ExpandedArmory" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "ExpandedArmory"
 
 minecraft {
-    version = "1.7.10-10.13.2.1291"
+	
+    version = config.minecraft_version + "-" + config.forge_version
     runDir = "run"
+	
+	replaceIn "ExArmRef.java"
+	replace "@VERSION@", "${config.mod_version}"
 }
+
+version = "${config.minecraft_version}-${config.mod_version}"
 
 dependencies {
     // you may put jars on which you depend on in ./libs
@@ -53,7 +68,7 @@ processResources
         include 'mcmod.info'
                 
         // replace version and mcversion
-        expand 'version':project.version, 'mcversion':project.minecraft.version
+        expand 'version': project.version, 'mcversion': project.config.minecraft_version
     }
         
     // copy everything else, thats not the mcmod.info

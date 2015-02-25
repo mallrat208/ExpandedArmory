@@ -1,8 +1,9 @@
-package mr208.ExpandedArmory.Thaumcraft.Items;
+package com.mr208.ExpandedArmory.Thaumcraft.Items;
 
+import ckathode.weaponmod.item.MeleeComponent;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import mr208.ExpandedArmory.Items.ExArmItemFlail;
+import com.mr208.ExpandedArmory.Items.ExArmItemMelee;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -19,10 +20,10 @@ import thaumcraft.api.IWarpingGear;
 
 import java.util.List;
 
-public class VoidItemFlail extends ExArmItemFlail implements IRepairable, IWarpingGear {
+public class VoidItemMelee extends ExArmItemMelee implements IRepairable, IWarpingGear {
     private final EnumRarity rarity;
-    public VoidItemFlail(String id, ToolMaterial toolmaterial, EnumRarity eRare) {
-        super(id, toolmaterial);
+    public VoidItemMelee(String id, MeleeComponent meleecomponent, EnumRarity eRare) {
+        super(id, meleecomponent);
         this.rarity = eRare;
     }
 
@@ -35,22 +36,24 @@ public class VoidItemFlail extends ExArmItemFlail implements IRepairable, IWarpi
     public int getWarp(ItemStack itemStack, EntityPlayer player) {
         return 1;
     }
+
     public void onUpdate(ItemStack stack, World world, Entity entity, int p_77663_4_, boolean p_77663_5_)
     {
         super.onUpdate(stack, world, entity, p_77663_4_, p_77663_5_);
         if ((stack.isItemDamaged()) && (entity != null) && (entity.ticksExisted % 20 == 0) && ((entity instanceof EntityLivingBase)))
         {  stack.damageItem(-1, (EntityLivingBase)entity);  }
     }
+
     @Override
     public boolean hitEntity(ItemStack weapon, EntityLivingBase Victim, EntityLivingBase Attacker)
     {
         if(!Victim.worldObj.isRemote && (!(Victim instanceof EntityPlayer) || !(Attacker instanceof EntityPlayer) || MinecraftServer.getServer().isPVPEnabled()))
         {
-            try {
-                Victim.addPotionEffect(new PotionEffect(Potion.weakness.getId(), 60));
-            }
-            catch (Exception e)
-            {        }
+        try {
+            Victim.addPotionEffect(new PotionEffect(Potion.weakness.getId(), 60));
+        }
+        catch (Exception e)
+        {        }
         }
         return super.hitEntity(weapon, Victim,Attacker);
     }

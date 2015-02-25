@@ -1,14 +1,14 @@
-package mr208.ExpandedArmory;
+package com.mr208.ExpandedArmory;
 
 
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
-import mr208.ExpandedArmory.AE2.AE2Integration;
-import mr208.ExpandedArmory.Botania.BotaniaIntegration;
-import mr208.ExpandedArmory.Items.GenericIntegration;
-import mr208.ExpandedArmory.Thaumcraft.ThaumcraftIntegration;
+import com.mr208.ExpandedArmory.AE2.AE2Integration;
+import com.mr208.ExpandedArmory.Botania.BotaniaIntegration;
+import com.mr208.ExpandedArmory.Items.GenericIntegration;
+import com.mr208.ExpandedArmory.Thaumcraft.ThaumcraftIntegration;
 import net.minecraft.item.Item;
 import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.oredict.OreDictionary;

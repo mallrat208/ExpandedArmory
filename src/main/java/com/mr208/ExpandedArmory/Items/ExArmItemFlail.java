@@ -1,7 +1,7 @@
-package mr208.ExpandedArmory.Items;
+package com.mr208.ExpandedArmory.Items;
 
 import ckathode.weaponmod.item.ItemFlail;
-import mr208.ExpandedArmory.IWeaponMaterialCheck;
+import com.mr208.ExpandedArmory.IWeaponMaterialCheck;
 import net.minecraft.item.ItemStack;
 
 public class ExArmItemFlail extends ItemFlail implements IWeaponMaterialCheck {

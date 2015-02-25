@@ -1,23 +1,22 @@
-package mr208.ExpandedArmory.Botania.Items;
+package com.mr208.ExpandedArmory.Botania.Items;
 
-import ckathode.weaponmod.item.MeleeComponent;
-import mr208.ExpandedArmory.Botania.ManaHelper;
-import mr208.ExpandedArmory.Items.ExArmItemMusket;
+import com.mr208.ExpandedArmory.Botania.ManaHelper;
+import com.mr208.ExpandedArmory.Items.ExArmItemFlail;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.world.World;
 import vazkii.botania.api.mana.IManaUsingItem;
 import vazkii.botania.api.mana.ManaItemHandler;
 
-public class BotanicalItemMusket extends ExArmItemMusket implements IManaUsingItem {
+public class BotanicalItemFlail extends ExArmItemFlail implements IManaUsingItem {
     private static final int MANA_PER_DMG = 51;
-    public BotanicalItemMusket(String id, MeleeComponent meleecomponent, Item bayonetitem) {
-        super(id, meleecomponent, bayonetitem);
+    public BotanicalItemFlail(String id, ToolMaterial toolmaterial) {
+        super(id, toolmaterial);
     }
+
 
     @Override
     public boolean hitEntity(ItemStack itemWeapon, EntityLivingBase targetEntity, EntityLivingBase usingEntity)
@@ -41,7 +40,7 @@ public class BotanicalItemMusket extends ExArmItemMusket implements IManaUsingIt
     @Override
     public void onUpdate(ItemStack weapon, World world, Entity player, int num, boolean bool)
     {
-    if(!world.isRemote && player instanceof EntityPlayer && weapon.getItemDamage() >0 && ManaItemHandler.requestManaExactForTool(weapon, (EntityPlayer) player, MANA_PER_DMG * 2,true))
-        weapon.setItemDamage(weapon.getItemDamage()-1);
+        if(!world.isRemote && player instanceof EntityPlayer && weapon.getItemDamage() >0 && ManaItemHandler.requestManaExactForTool(weapon, (EntityPlayer) player, MANA_PER_DMG * 2, true))
+            weapon.setItemDamage(weapon.getItemDamage()-1);
     }
 }

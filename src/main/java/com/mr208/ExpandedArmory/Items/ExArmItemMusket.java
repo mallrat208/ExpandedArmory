@@ -1,8 +1,8 @@
-package mr208.ExpandedArmory.Items;
+package com.mr208.ExpandedArmory.Items;
 
 import ckathode.weaponmod.item.ItemMusket;
 import ckathode.weaponmod.item.MeleeComponent;
-import mr208.ExpandedArmory.IWeaponMaterialCheck;
+import com.mr208.ExpandedArmory.IWeaponMaterialCheck;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
