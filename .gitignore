@@ -1,22 +1,29 @@
-*.class
-
-# Package Files #
-*.war
-*.ear
-/build
-/eclipse
-/bin
-/run
-/out
-
-*.mtl
-*.classpath
-*.project
+## gradle
 /.gradle
-/.settings
-/libs
-/API
+/build
+/gradle
+/gradlew
+/gradlew.bat
 
-*.ipr
-*.iws
-*.iml
+## ForgeGradle
+/run
+
+## eclipse
+/eclipse
+/.settings
+/.metadata
+/.classpath
+/.project
+/bin
+
+## intellij
+/out
+/.idea
+/*.iml
+/*.ipr
+/*.iws
+/atlassian-ide-plugin.xml
+
+## MISC
+/api
+/libs
