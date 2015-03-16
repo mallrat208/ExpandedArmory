@@ -21,8 +21,8 @@ import java.util.List;
 
 public class VoidItemFlail extends ExArmItemFlail implements IRepairable, IWarpingGear {
     private final EnumRarity rarity;
-    public VoidItemFlail(String id, ToolMaterial toolmaterial, EnumRarity eRare) {
-        super(id, toolmaterial);
+    public VoidItemFlail(String id, ToolMaterial toolmaterial, EnumRarity eRare,String repairmaterial) {
+        super(id, toolmaterial,repairmaterial);
         this.rarity = eRare;
     }
 
@@ -35,6 +35,8 @@ public class VoidItemFlail extends ExArmItemFlail implements IRepairable, IWarpi
     public int getWarp(ItemStack itemStack, EntityPlayer player) {
         return 1;
     }
+
+    @Override
     public void onUpdate(ItemStack stack, World world, Entity entity, int p_77663_4_, boolean p_77663_5_)
     {
         super.onUpdate(stack, world, entity, p_77663_4_, p_77663_5_);

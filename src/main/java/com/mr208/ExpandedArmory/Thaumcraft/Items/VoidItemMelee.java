@@ -22,8 +22,8 @@ import java.util.List;
 
 public class VoidItemMelee extends ExArmItemMelee implements IRepairable, IWarpingGear {
     private final EnumRarity rarity;
-    public VoidItemMelee(String id, MeleeComponent meleecomponent, EnumRarity eRare) {
-        super(id, meleecomponent);
+    public VoidItemMelee(String id, MeleeComponent meleecomponent, EnumRarity eRare, String repairmaterial) {
+        super(id, meleecomponent, repairmaterial);
         this.rarity = eRare;
     }
 
@@ -37,6 +37,7 @@ public class VoidItemMelee extends ExArmItemMelee implements IRepairable, IWarpi
         return 1;
     }
 
+    @Override
     public void onUpdate(ItemStack stack, World world, Entity entity, int p_77663_4_, boolean p_77663_5_)
     {
         super.onUpdate(stack, world, entity, p_77663_4_, p_77663_5_);

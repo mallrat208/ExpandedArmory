@@ -15,8 +15,8 @@ import vazkii.botania.api.mana.ManaItemHandler;
 
 public class BotanicalItemMelee extends ExArmItemMelee implements IManaUsingItem {
     public static final int MANA_PER_DMG = 51;
-    public BotanicalItemMelee(String id, MeleeComponent meleecomponent) {
-        super(id, meleecomponent);
+    public BotanicalItemMelee(String id, MeleeComponent meleecomponent, String repairmaterial) {
+        super(id, meleecomponent,repairmaterial);
     }
 
     @Override

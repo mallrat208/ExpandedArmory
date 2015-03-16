@@ -64,15 +64,15 @@ public class ThaumcraftIntegration {
             ThaumcraftApi.toolMatVoid.setRepairItem(new ItemStack(voidItem,1,16));
         }
 
-        battleaxeVoidMetal = new VoidItemMelee("battleaxe.void", new MeleeCompBattleaxe(ThaumcraftApi.toolMatVoid), EnumRarity.uncommon);
-        boomerangVoidMetal = new VoidItemMelee("boomerang.void", new MeleeCompBoomerang(ThaumcraftApi.toolMatVoid), EnumRarity.uncommon);
-        flailVoidMetal = new VoidItemFlail("flail.void", ThaumcraftApi.toolMatVoid, EnumRarity.uncommon);
-        halberdVoidMetal = new VoidItemMelee("halberd.void", new MeleeCompHalberd(ThaumcraftApi.toolMatVoid), EnumRarity.uncommon);
-        katanaVoidMetal = new VoidItemMelee("katana.void", new MeleeComponent(MeleeComponent.MeleeSpecs.KATANA, ThaumcraftApi.toolMatVoid), EnumRarity.uncommon);
-        knifeVoidMetal = new VoidItemMelee("knife.void", new MeleeCompKnife(ThaumcraftApi.toolMatVoid), EnumRarity.uncommon);
-        musketbayonetVoidMetal = new VoidItemMusket("musketbayonet.void", new MeleeCompKnife(ThaumcraftApi.toolMatVoid), knifeVoidMetal, EnumRarity.uncommon);
-        spearVoidMetal = new VoidItemMelee("spear.void", new MeleeCompSpear(ThaumcraftApi.toolMatVoid), EnumRarity.uncommon);
-        warhammerVoidMetal = new VoidItemMelee("warhammer.void", new MeleeCompWarhammer(ThaumcraftApi.toolMatVoid), EnumRarity.uncommon);
+        battleaxeVoidMetal = new VoidItemMelee("battleaxe.void", new MeleeCompBattleaxe(ThaumcraftApi.toolMatVoid), EnumRarity.uncommon,"ingotVoid");
+        boomerangVoidMetal = new VoidItemMelee("boomerang.void", new MeleeCompBoomerang(ThaumcraftApi.toolMatVoid), EnumRarity.uncommon,"ingotVoid");
+        flailVoidMetal = new VoidItemFlail("flail.void", ThaumcraftApi.toolMatVoid, EnumRarity.uncommon,"ingotVoid");
+        halberdVoidMetal = new VoidItemMelee("halberd.void", new MeleeCompHalberd(ThaumcraftApi.toolMatVoid), EnumRarity.uncommon,"ingotVoid");
+        katanaVoidMetal = new VoidItemMelee("katana.void", new MeleeComponent(MeleeComponent.MeleeSpecs.KATANA, ThaumcraftApi.toolMatVoid), EnumRarity.uncommon,"ingotVoid");
+        knifeVoidMetal = new VoidItemMelee("knife.void", new MeleeCompKnife(ThaumcraftApi.toolMatVoid), EnumRarity.uncommon,"ingotVoid");
+        musketbayonetVoidMetal = new VoidItemMusket("musketbayonet.void", new MeleeCompKnife(ThaumcraftApi.toolMatVoid), knifeVoidMetal, EnumRarity.uncommon,"ingotVoid");
+        spearVoidMetal = new VoidItemMelee("spear.void", new MeleeCompSpear(ThaumcraftApi.toolMatVoid), EnumRarity.uncommon,"ingotVoid");
+        warhammerVoidMetal = new VoidItemMelee("warhammer.void", new MeleeCompWarhammer(ThaumcraftApi.toolMatVoid), EnumRarity.uncommon,"ingotVoid");
 
         GameRegistry.addRecipe(new ShapedOreRecipe(battleaxeVoidMetal, "###", "#X#", " X ", 'X', "stickWood", '#', "ingotVoid"));
         GameRegistry.addRecipe(new ShapedOreRecipe(boomerangVoidMetal, "XX#", "  X", "  X", 'X', "plankWood", '#', "ingotVoid"));
@@ -95,15 +95,15 @@ public class ThaumcraftIntegration {
             ThaumcraftApi.toolMatThaumium.setRepairItem(new ItemStack(thaumItem, 1, 2));
         }
 
-        battleaxeThaumium = new ThaumicItemMelee("battleaxe.thaumium", new MeleeCompBattleaxe(ThaumcraftApi.toolMatThaumium), EnumRarity.uncommon);
-        boomerangThaumium = new ThaumicItemMelee("boomerang.thaumium", new MeleeCompBoomerang(ThaumcraftApi.toolMatThaumium), EnumRarity.uncommon);
-        flailThaumium = new ThaumicItemFlail("flail.thaumium", ThaumcraftApi.toolMatThaumium, EnumRarity.uncommon);
-        halberdThaumium = new ThaumicItemMelee("halberd.thaumium", new MeleeCompHalberd(ThaumcraftApi.toolMatThaumium), EnumRarity.uncommon);
-        katanaThaumium = new ThaumicItemMelee("katana.thaumium", new MeleeComponent(MeleeComponent.MeleeSpecs.KATANA, ThaumcraftApi.toolMatThaumium), EnumRarity.uncommon);
-        knifeThaumium = new ThaumicItemMelee("knife.thaumium", new MeleeCompKnife(ThaumcraftApi.toolMatThaumium), EnumRarity.uncommon);
-        musketbayonetThaumium = new ThaumicItemMusket("musketbayonet.thaumium", new MeleeCompKnife(ThaumcraftApi.toolMatThaumium), knifeThaumium, EnumRarity.uncommon);
-        spearThaumium = new ThaumicItemMelee("spear.thaumium", new MeleeCompSpear(ThaumcraftApi.toolMatThaumium), EnumRarity.uncommon);
-        warhammerThaumium = new ThaumicItemMelee("warhammer.thaumium", new MeleeCompWarhammer(ThaumcraftApi.toolMatThaumium), EnumRarity.uncommon);
+        battleaxeThaumium = new ThaumicItemMelee("battleaxe.thaumium", new MeleeCompBattleaxe(ThaumcraftApi.toolMatThaumium), EnumRarity.uncommon,"ingotThaumium");
+        boomerangThaumium = new ThaumicItemMelee("boomerang.thaumium", new MeleeCompBoomerang(ThaumcraftApi.toolMatThaumium), EnumRarity.uncommon,"ingotThaumium");
+        flailThaumium = new ThaumicItemFlail("flail.thaumium", ThaumcraftApi.toolMatThaumium, EnumRarity.uncommon,"ingotThaumium");
+        halberdThaumium = new ThaumicItemMelee("halberd.thaumium", new MeleeCompHalberd(ThaumcraftApi.toolMatThaumium), EnumRarity.uncommon,"ingotThaumium");
+        katanaThaumium = new ThaumicItemMelee("katana.thaumium", new MeleeComponent(MeleeComponent.MeleeSpecs.KATANA, ThaumcraftApi.toolMatThaumium), EnumRarity.uncommon,"ingotThaumium");
+        knifeThaumium = new ThaumicItemMelee("knife.thaumium", new MeleeCompKnife(ThaumcraftApi.toolMatThaumium), EnumRarity.uncommon,"ingotThaumium");
+        musketbayonetThaumium = new ThaumicItemMusket("musketbayonet.thaumium", new MeleeCompKnife(ThaumcraftApi.toolMatThaumium), knifeThaumium, EnumRarity.uncommon,"ingotThaumium");
+        spearThaumium = new ThaumicItemMelee("spear.thaumium", new MeleeCompSpear(ThaumcraftApi.toolMatThaumium), EnumRarity.uncommon,"ingotThaumium");
+        warhammerThaumium = new ThaumicItemMelee("warhammer.thaumium", new MeleeCompWarhammer(ThaumcraftApi.toolMatThaumium), EnumRarity.uncommon,"ingotThaumium");
 
         GameRegistry.addRecipe(new ShapedOreRecipe(battleaxeThaumium, "###", "#X#", " X ", 'X', "stickWood", '#', "ingotThaumium"));
         GameRegistry.addRecipe(new ShapedOreRecipe(boomerangThaumium, "XX#", "  X", "  X", 'X', "plankWood", '#', "ingotThaumium"));

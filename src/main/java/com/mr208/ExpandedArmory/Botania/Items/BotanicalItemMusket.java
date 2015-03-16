@@ -15,8 +15,8 @@ import vazkii.botania.api.mana.ManaItemHandler;
 
 public class BotanicalItemMusket extends ExArmItemMusket implements IManaUsingItem {
     private static final int MANA_PER_DMG = 51;
-    public BotanicalItemMusket(String id, MeleeComponent meleecomponent, Item bayonetitem) {
-        super(id, meleecomponent, bayonetitem);
+    public BotanicalItemMusket(String id, MeleeComponent meleecomponent, Item bayonetitem, String repairmaterial) {
+        super(id, meleecomponent, bayonetitem, repairmaterial);
     }
 
     @Override

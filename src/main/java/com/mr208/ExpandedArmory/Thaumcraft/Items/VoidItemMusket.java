@@ -25,9 +25,9 @@ public class VoidItemMusket extends ExArmItemMusket implements IRepairable, IWar
 
     private final EnumRarity rarity;
 
-    public VoidItemMusket(String id, MeleeComponent meleecomponent, Item bayonetitem, EnumRarity eRare) {
+    public VoidItemMusket(String id, MeleeComponent meleecomponent, Item bayonetitem, EnumRarity eRare, String repairmaterial) {
 
-        super(id, meleecomponent, bayonetitem);
+        super(id, meleecomponent, bayonetitem, repairmaterial);
         this.rarity = eRare;
     }
 
@@ -41,6 +41,7 @@ public class VoidItemMusket extends ExArmItemMusket implements IRepairable, IWar
         return 1;
     }
 
+    @Override
     public void onUpdate(ItemStack stack, World world, Entity entity, int p_77663_4_, boolean p_77663_5_)
     {
         super.onUpdate(stack, world, entity, p_77663_4_, p_77663_5_);

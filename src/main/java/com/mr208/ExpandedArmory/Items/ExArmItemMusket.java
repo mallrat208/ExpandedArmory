@@ -5,15 +5,18 @@ import ckathode.weaponmod.item.MeleeComponent;
 import com.mr208.ExpandedArmory.IWeaponMaterialCheck;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 
 public class ExArmItemMusket extends ItemMusket implements IWeaponMaterialCheck {
     private final int materialID;
     private final ToolMaterial toolMaterial;
+    private final String repairMaterial;
 
-    public ExArmItemMusket(String id, MeleeComponent meleecomponent, Item bayonetitem) {
+    public ExArmItemMusket(String id, MeleeComponent meleecomponent, Item bayonetitem, String repairmaterial) {
         super(id, meleecomponent, bayonetitem);
-        toolMaterial = meleecomponent.weaponMaterial;
-        materialID = meleecomponent.weaponMaterial.ordinal();
+        this.toolMaterial = meleecomponent.weaponMaterial;
+        this.materialID = meleecomponent.weaponMaterial.ordinal();
+        this.repairMaterial = repairmaterial;
     }
 
     @Override
@@ -24,6 +27,10 @@ public class ExArmItemMusket extends ItemMusket implements IWeaponMaterialCheck 
     @Override
     public boolean getIsRepairable(ItemStack itemToBeRepaired, ItemStack repairMaterial)
     {
-        return repairMaterial.isItemEqual(toolMaterial.getRepairItemStack())?true:super.getIsRepairable(itemToBeRepaired, repairMaterial);
+        for(int ores:OreDictionary.getOreIDs(repairMaterial))
+        {
+            if(OreDictionary.getOreName(ores) == this.repairMaterial) return true;
+        }
+        return super.getIsRepairable(itemToBeRepaired, repairMaterial);
     }
 }

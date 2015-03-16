@@ -13,8 +13,8 @@ import vazkii.botania.api.mana.ManaItemHandler;
 
 public class BotanicalItemFlail extends ExArmItemFlail implements IManaUsingItem {
     private static final int MANA_PER_DMG = 51;
-    public BotanicalItemFlail(String id, ToolMaterial toolmaterial) {
-        super(id, toolmaterial);
+    public BotanicalItemFlail(String id, ToolMaterial toolmaterial, String repairmaterial) {
+        super(id, toolmaterial,repairmaterial);
     }
 
 

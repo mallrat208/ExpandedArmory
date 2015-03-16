@@ -44,9 +44,9 @@ public class ExArmConfig {
     {
 
         //Generic Metals
-        conf.setCategoryComment("Generic Metals","These Weapons will only load if there is the ingot form of the Metal in question available in the OreDictionary");
-        enableBronze = conf.getBoolean("1. Bronze Weapons","Generic Metals",true,"Enable Bronze Weapons?");
-        enableSteel = conf.getBoolean("2. Steel Weapons","Generic Metals",true,"Enable Steel Weapons?");
+        //conf.setCategoryComment("Generic Metals","These Weapons will only load if there is the ingot form of the Metal in question available in the OreDictionary");
+        enableBronze = conf.getBoolean("Bronze Weapons","Bronze",true,"Enable Bronze Weapons?");
+        enableSteel = conf.getBoolean("2. Steel Weapons","Steel",true,"Enable Steel Weapons?");
 
 
         //Applied Energistics 2
