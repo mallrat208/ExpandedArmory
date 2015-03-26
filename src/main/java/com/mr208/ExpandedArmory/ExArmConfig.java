@@ -1,6 +1,7 @@
 package com.mr208.ExpandedArmory;
 
 import net.minecraftforge.common.config.Configuration;
+import vazkii.botania.api.BotaniaAPI;
 
 import java.io.File;
 
@@ -28,6 +29,19 @@ public class ExArmConfig {
     public static Boolean enableManaSteel;
     public static Boolean enableTerraSteel;
     public static Boolean enableElementium;
+
+    //SimpleOres
+    public static Boolean enableAdamantium;
+    public static Boolean enableOnyx;
+    //Fusion
+    public static Boolean enableThyrium;
+    public static Boolean enableSinisite;
+    //Netherrocks
+    public static Boolean enableMalachite;
+    public static Boolean enableAshstone;
+    public static Boolean enableDragonstone;
+    public static Boolean enableArgonite;
+
 
 
 
@@ -68,6 +82,19 @@ public class ExArmConfig {
         //Botania
         enableBotania = conf.getBoolean("1. Enable Botania Support","Botania",true,"Enables Manasteel, Terrasteel, and Elementium if enabled below");
         enableManaSteel = conf.getBoolean("2. Manasteel Weapons","Botania",true,"Enable Manasteel Weapons?");
+
+        //Simple Ores
+        enableAdamantium = conf.getBoolean("Enable Adamantium Weapons","Simple Ores 2",true,"Enables Adamantium Weapons for Simple Ores 2");
+        enableOnyx = conf.getBoolean("Enable Onyx Weapons","Simple Ores", true,"Enables Onyx Weapons for Simple Ores 2");
+        //fusion
+        enableThyrium = conf.getBoolean("Enable Thyrium Weapons","Fusion", true,"Enables Thyrium Weapons for Fusion");
+        enableSinisite = conf.getBoolean("Enable Sinisite Weapons","Fusion", true,"Enables Sinisite Weapons for Fusion");
+        //Netherrocks
+        enableMalachite = conf.getBoolean("Enable Malachite Weapons","Netherrocks", true,"Enables Malachite Weapons for Netherrocks");
+        enableAshstone = conf.getBoolean("Enable Ashsstone Weapons","Netherrocks", true,"Enables Ashstone Weapons for Netherrocks");
+        enableDragonstone = conf.getBoolean("Enable Dragonstone Weapons","Netherrocks",true,"Enables Dragonstone Weapons for Netherrocks");
+        enableArgonite = conf.getBoolean("Enable Argonite Weapons","Netherrocks",true,"Enables Argonite Weapons for Netherrocks");
+
 
         if (conf.hasChanged())
         {conf.save(); }

@@ -1,9 +1,8 @@
 package com.mr208.ExpandedArmory.SimpleOres;
 
-import alexndr.api.core.SimpleCoreAPI;
-import alexndr.plugins.Fusion.Fusion;
 import alexndr.plugins.SimpleOres.SimpleOres;
 import ckathode.weaponmod.entity.projectile.MaterialRegistry;
+import com.mr208.ExpandedArmory.ExArmConfig;
 import com.mr208.ExpandedArmory.CustomMaterials;
 import com.mr208.ExpandedArmory.RegisterItems;
 import cpw.mods.fml.common.Loader;
@@ -97,22 +96,22 @@ public class SimpleOreIntegration {
     {
         if(Loader.isModLoaded("simpleores"))
         {
-            initAdamantium();
-            initOnyx();
+            if(ExArmConfig.enableAdamantium) initAdamantium();
+            if(ExArmConfig.enableOnyx) initOnyx();
         }
 
         if(Loader.isModLoaded("fusion"))
         {
-            initThyrium();
-            initSinisite();
+            if(ExArmConfig.enableThyrium) initThyrium();
+            if(ExArmConfig.enableSinisite) initSinisite();
         }
 
         if(Loader.isModLoaded("netherrocks"))
         {
-            initMalachite();
-            initAshstone();
-            initDragonstone();
-            initArgonite();
+            if(ExArmConfig.enableMalachite) initMalachite();
+            if(ExArmConfig.enableAshstone) initAshstone();
+            if(ExArmConfig.enableDragonstone) initDragonstone();
+            if(ExArmConfig.enableArgonite) initArgonite();
 
         }
     }
