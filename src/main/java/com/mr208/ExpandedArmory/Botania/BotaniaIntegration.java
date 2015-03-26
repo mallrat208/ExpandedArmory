@@ -3,6 +3,7 @@ package com.mr208.ExpandedArmory.Botania;
 import ckathode.weaponmod.BalkonsWeaponMod;
 import ckathode.weaponmod.entity.projectile.MaterialRegistry;
 import ckathode.weaponmod.item.*;
+import com.mr208.ExpandedArmory.RegisterItems;
 import cpw.mods.fml.common.registry.GameRegistry;
 import com.mr208.ExpandedArmory.Botania.Items.BotanicalItemFlail;
 import com.mr208.ExpandedArmory.Botania.Items.BotanicalItemMelee;
@@ -41,26 +42,18 @@ public class BotaniaIntegration {
             Item.ToolMaterial.valueOf("MANASTEEL").setRepairItem(manasteelIS);
         }
 
-        battleaxeManasteel = new BotanicalItemMelee("battleaxe.manasteel", new MeleeCompBattleaxe(BotaniaAPI.manasteelToolMaterial), "ingotManasteel");
-        boomerangManasteel = new BotanicalItemMelee("boomerang.manasteel", new MeleeCompBoomerang(BotaniaAPI.manasteelToolMaterial), "ingotManasteel");
-        flailManasteel = new BotanicalItemFlail("flail.manasteel", BotaniaAPI.manasteelToolMaterial, "ingotManasteel");
-        halberdManasteel = new BotanicalItemMelee("halberd.manasteel", new MeleeCompHalberd(BotaniaAPI.manasteelToolMaterial), "ingotManasteel");
-        katanaManasteel = new BotanicalItemMelee("katana.manasteel", new MeleeComponent(MeleeComponent.MeleeSpecs.KATANA,BotaniaAPI.manasteelToolMaterial), "ingotManasteel");
-        knifeManasteel = new BotanicalItemMelee("knife.manasteel", new MeleeCompKnife(BotaniaAPI.manasteelToolMaterial), "ingotManasteel");
-        musketbayonetManasteel = new BotanicalItemMusket("musketbayonet.manasteel", new MeleeCompKnife(BotaniaAPI.manasteelToolMaterial),knifeManasteel, "ingotManasteel");
-        spearManasteel = new BotanicalItemMelee("spear.manasteel", new MeleeCompSpear(BotaniaAPI.manasteelToolMaterial), "ingotManasteel");
-        warhammerManasteel = new BotanicalItemMelee("warhammer.manasteel", new MeleeCompWarhammer(BotaniaAPI.manasteelToolMaterial), "ingotManasteel");
+        battleaxeManasteel = new BotanicalItemMelee("battleaxe.manasteel", new MeleeCompBattleaxe(BotaniaAPI.manasteelToolMaterial), "ingotManasteel").setTextureName("exparmory:manasteel/battleaxe.manasteel");
+        boomerangManasteel = new BotanicalItemMelee("boomerang.manasteel", new MeleeCompBoomerang(BotaniaAPI.manasteelToolMaterial), "ingotManasteel").setTextureName("exparmory:manasteel/boomerang.manasteel");
+        flailManasteel = new BotanicalItemFlail("flail.manasteel", BotaniaAPI.manasteelToolMaterial, "ingotManasteel").setTextureName("exparmory:manasteel/flail.manasteel");
+        halberdManasteel = new BotanicalItemMelee("halberd.manasteel", new MeleeCompHalberd(BotaniaAPI.manasteelToolMaterial), "ingotManasteel").setTextureName("exparmory:manasteel/halberd.manasteel");
+        katanaManasteel = new BotanicalItemMelee("katana.manasteel", new MeleeComponent(MeleeComponent.MeleeSpecs.KATANA,BotaniaAPI.manasteelToolMaterial), "ingotManasteel").setTextureName("exparmory:manasteel/katana.manasteel");
+        knifeManasteel = new BotanicalItemMelee("knife.manasteel", new MeleeCompKnife(BotaniaAPI.manasteelToolMaterial), "ingotManasteel").setTextureName("exparmory:manasteel/knife.manasteel");
+        musketbayonetManasteel = new BotanicalItemMusket("musketbayonet.manasteel", new MeleeCompKnife(BotaniaAPI.manasteelToolMaterial),knifeManasteel, "ingotManasteel").setTextureName("exparmory:manasteel/musketbayonet.manasteel");
+        spearManasteel = new BotanicalItemMelee("spear.manasteel", new MeleeCompSpear(BotaniaAPI.manasteelToolMaterial), "ingotManasteel").setTextureName("exparmory:manasteel/spear.manasteel");
+        warhammerManasteel = new BotanicalItemMelee("warhammer.manasteel", new MeleeCompWarhammer(BotaniaAPI.manasteelToolMaterial), "ingotManasteel").setTextureName("exparmory:manasteel/warhammer.manasteel");
 
-        GameRegistry.addRecipe(new ShapedOreRecipe(battleaxeManasteel, "###", "#X#", " X ", 'X', "livingwoodTwig", '#', "ingotManasteel"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(boomerangManasteel, "XX#", "  X", "  X", 'X', "plankWood", '#', "ingotManasteel"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(flailManasteel, "  O", " XO", "X #", 'X', "livingwoodTwig", 'O', Items.string, '#', "ingotManasteel"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(halberdManasteel, " ##", " X#", "X  ", 'X', "livingwoodTwig", '#', "ingotManasteel"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(katanaManasteel, "  #", " # ", "X  ", 'X', "livingwoodTwig", '#', "ingotManasteel"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(knifeManasteel, "#X", 'X', "livingwoodTwig", '#', "ingotManasteel"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(knifeManasteel, "#", "X", 'X', "livingwoodTwig", '#', "ingotManasteel"));
-        GameRegistry.addShapelessRecipe(new ItemStack(musketbayonetManasteel), knifeManasteel, BalkonsWeaponMod.musket);
-        GameRegistry.addRecipe(new ShapedOreRecipe(spearManasteel, "  #", " X ", "X  ", 'X', "livingwoodTwig", '#', "ingotManasteel"));
-        GameRegistry.addRecipe(new ShapedOreRecipe(warhammerManasteel, "#X#", "#X#", " X ", 'X', "livingwoodTwig", '#', "ingotManasteel"));
+        Item[] weaponArray = {battleaxeManasteel, boomerangManasteel, flailManasteel, halberdManasteel, katanaManasteel, knifeManasteel, musketbayonetManasteel, spearManasteel, warhammerManasteel};
+        RegisterItems.CreateWeaponRecipes(weaponArray,"livingwoodTwig","ingotManasteel");
 
     }
 }

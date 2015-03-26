@@ -113,4 +113,82 @@ item.katana.shrouded.name=Aberrant Shrouded Blade
 item.exparmory_ingotBronze.name=Bronze Ingot
 item.exparmory_ingotSteel.name=Steel Ingot
 
-item.exparmory_crowbar.name=The Freeman's Crowbar
+item.battleaxe.adamantium.name=Adamantium Battleaxe
+item.boomerang.adamantium.name=Adamantium Boomerang
+item.flail.adamantium.name=Adamantium Flail
+item.halberd.adamantium.name=Adamantium Halberd
+item.katana.adamantium.name=Adamantium Katana
+item.knife.adamantium.name=Adamantium Knife
+item.musketbayonet.adamantium.name=Musket with Adamantium Bayonet
+item.spear.adamantium.name=Adamantium Spear
+item.warhammer.adamantium.name=Adamantium Warhammer
+
+item.battleaxe.onyx.name=Onyx Battleaxe
+item.boomerang.onyx.name=Onyx Boomerang
+item.flail.onyx.name=Onyx Flail
+item.halberd.onyx.name=Onyx Halberd
+item.katana.onyx.name=Onyx Katana
+item.knife.onyx.name=Onyx Knife
+item.musketbayonet.onyx.name=Musket with Onyx Bayonet
+item.spear.onyx.name=Onyx Spear
+item.warhammer.onyx.name=Onyx Warhammer
+
+item.battleaxe.thyrium.name=Thyrium Battleaxe
+item.boomerang.thyrium.name=Thyrium Boomerang
+item.flail.thyrium.name=Thyrium Flail
+item.halberd.thyrium.name=Thyrium Halberd
+item.katana.thyrium.name=Thyrium Katana
+item.knife.thyrium.name=Thyrium Knife
+item.musketbayonet.thyrium.name=Musket with Thyrium Bayonet
+item.spear.thyrium.name=Thyrium Spear
+item.warhammer.thyrium.name=Thyrium Warhammer
+
+item.battleaxe.sinisite.name=Sinisite Battleaxe
+item.boomerang.sinisite.name=Sinisite Boomerang
+item.flail.sinisite.name=Sinisite Flail
+item.halberd.sinisite.name=Sinisite Halberd
+item.katana.sinisite.name=Sinisite Katana
+item.knife.sinisite.name=Sinisite Knife
+item.musketbayonet.sinisite.name=Musket with Sinisite Bayonet
+item.spear.sinisite.name=Sinisite Spear
+item.warhammer.sinisite.name=Sinisite Warhammer
+
+item.battleaxe.malachite.name=Malachite Battleaxe
+item.boomerang.malachite.name=Malachite Boomerang
+item.flail.malachite.name=Malachite Flail
+item.halberd.malachite.name=Malachite Halberd
+item.katana.malachite.name=Malachite Katana
+item.knife.malachite.name=Malachite Knife
+item.musketbayonet.malachite.name=Musket with Malachite Bayonet
+item.spear.malachite.name=Malachite Spear
+item.warhammer.malachite.name=Malachite Warhammer
+
+item.battleaxe.ashstone.name=Ashstone Battleaxe
+item.boomerang.ashstone.name=Ashstone Boomerang
+item.flail.ashstone.name=Ashstone Flail
+item.halberd.ashstone.name=Ashstone Halberd
+item.katana.ashstone.name=Ashstone Katana
+item.knife.ashstone.name=Ashstone Knife
+item.musketbayonet.ashstone.name=Musket with Ashstone Bayonet
+item.spear.ashstone.name=Ashstone Spear
+item.warhammer.ashstone.name=Ashstone Warhammer
+
+item.battleaxe.argonite.name=Argonite Battleaxe
+item.boomerang.argonite.name=Argonite Boomerang
+item.flail.argonite.name=Argonite Flail
+item.halberd.argonite.name=Argonite Halberd
+item.katana.argonite.name=Argonite Katana
+item.knife.argonite.name=Argonite Knife
+item.musketbayonet.argonite.name=Musket with Argonite Bayonet
+item.spear.argonite.name=Argonite Spear
+item.warhammer.argonite.name=Argonite Warhammer
+
+item.battleaxe.dragonstone.name=Dragonstone Battleaxe
+item.boomerang.dragonstone.name=Dragonstone Boomerang
+item.flail.dragonstone.name=Dragonstone Flail
+item.halberd.dragonstone.name=Dragonstone Halberd
+item.katana.dragonstone.name=Dragonstone Katana
+item.knife.dragonstone.name=Dragonstone Knife
+item.musketbayonet.dragonstone.name=Musket with Dragonstone Bayonet
+item.spear.dragonstone.name=Dragonstone Spear
+item.warhammer.dragonstone.name=Dragonstone Warhammer

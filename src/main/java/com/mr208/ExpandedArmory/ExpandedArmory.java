@@ -2,6 +2,7 @@ package com.mr208.ExpandedArmory;
 
 
 import com.mr208.ExpandedArmory.Items.ItemIngot;
+import com.mr208.ExpandedArmory.SimpleOres.SimpleOreIntegration;
 import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
@@ -16,7 +17,7 @@ import net.minecraftforge.common.util.EnumHelper;
 import net.minecraftforge.oredict.OreDictionary;
 
 
-@Mod(modid = ExArmRef.MOD_ID, name= ExArmRef.MOD_NAME, version= ExArmRef.MOD_VER, dependencies = "after:Botania;after:appliedenergistics2;after:Thaumcraft;required-after:weaponmod")
+@Mod(modid = ExArmRef.MOD_ID, name= ExArmRef.MOD_NAME, version= ExArmRef.MOD_VER, dependencies = "after:Botania;after:appliedenergistics2;after:Thaumcraft;required-after:weaponmod;after:simpleoes;after:fusion;after:netherrocks")
 public class ExpandedArmory {
 
     @Mod.Instance
@@ -40,6 +41,7 @@ public class ExpandedArmory {
         if(ExArmConfig.enableThaumcraftWeapons && Loader.isModLoaded("Thaumcraft")) ThaumcraftIntegration.initThaumcraft();
         if(ExArmConfig.enableSteel) GenericIntegration.initSteel();
         if(ExArmConfig.enableBronze)    GenericIntegration.initBronze();
+        SimpleOreIntegration.initSimpleMods();
 
     }
 }
