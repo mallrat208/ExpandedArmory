@@ -1,7 +1,6 @@
 package com.mr208.ExpandedArmory;
 
 import net.minecraftforge.common.config.Configuration;
-import vazkii.botania.api.BotaniaAPI;
 
 import java.io.File;
 
