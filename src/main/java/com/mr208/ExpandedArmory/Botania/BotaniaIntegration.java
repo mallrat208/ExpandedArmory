@@ -10,9 +10,7 @@ import com.mr208.ExpandedArmory.Botania.Items.BotanicalItemMelee;
 import com.mr208.ExpandedArmory.Botania.Items.BotanicalItemMusket;
 import com.mr208.ExpandedArmory.CustomMaterials;
 import com.mr208.ExpandedArmory.ExArmConfig;
-import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.oredict.ShapedOreRecipe;
 import vazkii.botania.api.BotaniaAPI;
 import net.minecraft.item.Item;
 import vazkii.botania.common.item.ModItems;
@@ -37,7 +35,7 @@ public class BotaniaIntegration {
     {
         MaterialRegistry.registerCustomProjectileMaterial(new CustomMaterials(BotaniaAPI.manasteelToolMaterial, 0x7DC3E5FF));
         ItemStack manasteelIS = new ItemStack(ModItems.manaResource,1,0);
-        if(Item.ToolMaterial.valueOf("MANASTEEL").getRepairItemStack()==null)
+        if(Item.ToolMaterial.valueOf("MANASTEEL").customCraftingMaterial==null)
         {
             Item.ToolMaterial.valueOf("MANASTEEL").setRepairItem(manasteelIS);
         }

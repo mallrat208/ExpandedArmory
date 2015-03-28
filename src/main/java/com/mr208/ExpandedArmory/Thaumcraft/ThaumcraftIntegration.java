@@ -91,7 +91,7 @@ public class ThaumcraftIntegration {
         MaterialRegistry.registerCustomProjectileMaterial(new CustomMaterials(ThaumcraftApi.toolMatThaumium, 0x46367dFF));
         Item thaumItem = GameRegistry.findItem("Thaumcraft", "ItemResource");
 
-        if (ThaumcraftApi.toolMatThaumium.getRepairItemStack()==null)
+        if (ThaumcraftApi.toolMatThaumium.customCraftingMaterial==null)
         {
             ThaumcraftApi.toolMatThaumium.setRepairItem(new ItemStack(thaumItem, 1, 2));
         }

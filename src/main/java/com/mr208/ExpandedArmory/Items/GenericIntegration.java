@@ -34,22 +34,19 @@ public class GenericIntegration {
     public static Item spearSteel;
     public static Item warhammerSteel;
 
+    public static void preInitGI()
+    {
+        GameRegistry.registerItem(ingotBronze = new ItemIngot("ingotBronze"),"ingotBronze");
+        GameRegistry.registerItem(ingotSteel = new ItemIngot("ingotSteel"),"ingotSteel");
+    }
+
     public static void initBronze() {
 
         Item.ToolMaterial bronzeMaterial = getBronzeMaterial();
         MaterialRegistry.registerCustomProjectileMaterial(new CustomMaterials(bronzeMaterial,0xE3A55CFF));
-
-        GameRegistry.registerItem(ingotBronze = new ItemIngot("ingotBronze"),"ingotBronze");
-
-        if(bronzeMaterial.getRepairItemStack()==null)
-        {
-            bronzeMaterial.setRepairItem(new ItemStack(ingotBronze));
-        }
-
+        if(bronzeMaterial.customCraftingMaterial==null)   bronzeMaterial.setRepairItem(new ItemStack(ingotBronze,1,0));
         Item[] weaponArray = {battleaxeBronze, boomerangBronze, flailBronze, halberdBronze, katanaBronze, knifeBronze, musketbayonetBronze, spearBronze, warhammerBronze};
-
         RegisterItems.RegisterRegularWeapon(weaponArray,"bronze",bronzeMaterial,"ingotBronze");
-
         RegisterItems.CreateWeaponRecipes(weaponArray,"stickWood","ingotBronze");
     }
 
@@ -58,17 +55,9 @@ public class GenericIntegration {
 
         Item.ToolMaterial steelMaterial = getSteelMaterial();
         MaterialRegistry.registerCustomProjectileMaterial(new CustomMaterials(steelMaterial,0x9d9d9dFF));
-
-        GameRegistry.registerItem(ingotSteel = new ItemIngot("ingotSteel"),"EAingotSteel");
-        if(steelMaterial.getRepairItemStack()==null)
-        {
-            steelMaterial.setRepairItem(new ItemStack(ingotSteel));
-        }
-
+        if(steelMaterial.customCraftingMaterial==null)    steelMaterial.setRepairItem(new ItemStack(ingotSteel, 1,0));
         Item[] weaponArray = {battleaxeSteel, boomerangSteel, flailSteel, halberdSteel, katanaSteel, knifeSteel, musketbayonetSteel, spearSteel, warhammerSteel};
-
         RegisterItems.RegisterRegularWeapon(weaponArray,"steel",steelMaterial,"ingotSteel");
-
         RegisterItems.CreateWeaponRecipes(weaponArray,"stickWood","ingotSteel");
 
         
@@ -78,12 +67,12 @@ public class GenericIntegration {
     private static Item.ToolMaterial getBronzeMaterial() {
         if (Loader.isModLoaded("fusion")) return Item.ToolMaterial.valueOf("BRONZE");
         if (Loader.isModLoaded("ThermalFoundation")) return Item.ToolMaterial.valueOf("TF:BRONZE");
-        return EnumHelper.addToolMaterial("EA:BRONZE", 2, 500, 6.0f, 2.0f, 15);
+        return EnumHelper.addToolMaterial("EA|BRONZE", 2, 500, 6f, 2f, 15);
     }
 
     private static Item.ToolMaterial getSteelMaterial() {
         if (Loader.isModLoaded("fusion")) return Item.ToolMaterial.valueOf("STEEL");
         if (Loader.isModLoaded("Railcraft")) return Item.ToolMaterial.valueOf("RAILCRAFT_STEEL");
-        return EnumHelper.addToolMaterial("EA:STEEL", 2, 500, 7.0f, 2.0f, 9);
+        return EnumHelper.addToolMaterial("EA|STEEL", 2, 500, 7f, 2f, 9);
     }
 }

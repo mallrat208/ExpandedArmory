@@ -28,6 +28,7 @@ public class ExpandedArmory {
     {
 
         ExArmConfig.init(event.getSuggestedConfigurationFile());
+        GenericIntegration.preInitGI();
 
     }
 
