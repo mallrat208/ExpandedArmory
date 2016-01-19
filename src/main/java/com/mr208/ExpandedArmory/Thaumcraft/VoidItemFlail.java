@@ -1,14 +1,12 @@
-package com.mr208.ExpandedArmory.Thaumcraft.Items;
+package com.mr208.ExpandedArmory.Thaumcraft;
 
-import ckathode.weaponmod.item.MeleeComponent;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import com.mr208.ExpandedArmory.Items.ExArmItemMusket;
+import com.mr208.ExpandedArmory.Items.ExArmItemFlail;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.EnumRarity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
@@ -21,13 +19,10 @@ import thaumcraft.api.IWarpingGear;
 
 import java.util.List;
 
-public class VoidItemMusket extends ExArmItemMusket implements IRepairable, IWarpingGear {
-
+public class VoidItemFlail extends ExArmItemFlail implements IRepairable, IWarpingGear {
     private final EnumRarity rarity;
-
-    public VoidItemMusket(String id, MeleeComponent meleecomponent, Item bayonetitem, EnumRarity eRare, String repairmaterial) {
-
-        super(id, meleecomponent, bayonetitem, repairmaterial);
+    public VoidItemFlail(String id, ToolMaterial toolmaterial, EnumRarity eRare,String repairmaterial) {
+        super(id, toolmaterial,repairmaterial);
         this.rarity = eRare;
     }
 
@@ -48,7 +43,6 @@ public class VoidItemMusket extends ExArmItemMusket implements IRepairable, IWar
         if ((stack.isItemDamaged()) && (entity != null) && (entity.ticksExisted % 20 == 0) && ((entity instanceof EntityLivingBase)))
         {  stack.damageItem(-1, (EntityLivingBase)entity);  }
     }
-
     @Override
     public boolean hitEntity(ItemStack weapon, EntityLivingBase Victim, EntityLivingBase Attacker)
     {

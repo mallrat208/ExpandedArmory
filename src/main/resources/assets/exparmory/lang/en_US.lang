@@ -112,6 +112,8 @@ item.katana.shrouded.name=Aberrant Shrouded Blade
 
 item.exparmory_ingotBronze.name=Bronze Ingot
 item.exparmory_ingotSteel.name=Steel Ingot
+item.exparmory_ingotBrass.name=Brass Ingot
+item.exparmory_ingotGildedIron.name=Gilded Iron Ingot
 
 item.battleaxe.adamantium.name=Adamantium Battleaxe
 item.boomerang.adamantium.name=Adamantium Boomerang
@@ -192,3 +194,7 @@ item.knife.dragonstone.name=Dragonstone Knife
 item.musketbayonet.dragonstone.name=Musket with Dragonstone Bayonet
 item.spear.dragonstone.name=Dragonstone Spear
 item.warhammer.dragonstone.name=Dragonstone Warhammer
+
+item.crowbar.manasteel.name=Manasteel Crowbar
+item.crowbar.resistance.name=Crowbar of the Resistance
+item.crowbar.resistance.desc=Made for the One Free Man

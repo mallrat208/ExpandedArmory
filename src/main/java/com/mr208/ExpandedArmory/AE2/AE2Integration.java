@@ -35,7 +35,6 @@ public class AE2Integration {
     public static Item.ToolMaterial netherQuartz;
     public static Item.ToolMaterial certusQuartz;
 
-
     public static void preInit()
     {
 
@@ -55,7 +54,7 @@ public class AE2Integration {
                 Item.ToolMaterial.IRON.getEfficiencyOnProperMaterial(),
                 Item.ToolMaterial.IRON.getDamageVsEntity(),
                 Item.ToolMaterial.IRON.getEnchantability());
-        netherQuartz.setRepairItem(new ItemStack(Items.quartz));
+        netherQuartz.setRepairItem(quartzIS);
         OreDictionary.registerOre("quartzNether",Items.quartz);
         MaterialRegistry.registerCustomProjectileMaterial(new CustomMaterials(netherQuartz, 0xBFB8AEFF));
         //MaterialRegistry.registerCustomProjectileMaterial(new CustomMaterials(netherQuartz, 0xD9D4CFFF));

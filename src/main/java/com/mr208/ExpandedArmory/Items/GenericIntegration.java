@@ -8,6 +8,9 @@ import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.registry.GameRegistry;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.WeightedRandomChestContent;
+
+import net.minecraftforge.common.ChestGenHooks;
 import net.minecraftforge.common.util.EnumHelper;
 
 public class GenericIntegration {
@@ -34,10 +37,23 @@ public class GenericIntegration {
     public static Item spearSteel;
     public static Item warhammerSteel;
 
+    public static Item crowbarResistance;
+
+	public static Item.ToolMaterial freeSteel;
+
     public static void preInitGI()
     {
         GameRegistry.registerItem(ingotBronze = new ItemIngot("ingotBronze"),"ingotBronze");
         GameRegistry.registerItem(ingotSteel = new ItemIngot("ingotSteel"),"ingotSteel");
+
+		if(Loader.isModLoaded("Railcraft"))
+		{
+			Item.ToolMaterial diamondMat = Item.ToolMaterial.EMERALD;
+			freeSteel = EnumHelper.addToolMaterial("FREESTEEL",diamondMat.getHarvestLevel(),diamondMat.getMaxUses(),diamondMat.getEfficiencyOnProperMaterial(),diamondMat.getDamageVsEntity(),diamondMat.getEnchantability()).setRepairItem(new ItemStack(ingotSteel));
+			GameRegistry.registerItem(crowbarResistance = new ItemCrowbarResistance(freeSteel),"crowbar.resistance");
+			ChestGenHooks.getInfo(ChestGenHooks.VILLAGE_BLACKSMITH).addItem(new WeightedRandomChestContent(new ItemStack(crowbarResistance).copy(),1,1,2));
+		}
+
     }
 
     public static void initBronze() {
@@ -45,7 +61,7 @@ public class GenericIntegration {
         Item.ToolMaterial bronzeMaterial = getBronzeMaterial();
         MaterialRegistry.registerCustomProjectileMaterial(new CustomMaterials(bronzeMaterial,0xE3A55CFF));
         if(bronzeMaterial.customCraftingMaterial==null)   bronzeMaterial.setRepairItem(new ItemStack(ingotBronze,1,0));
-        Item[] weaponArray = {battleaxeBronze, boomerangBronze, flailBronze, halberdBronze, katanaBronze, knifeBronze, musketbayonetBronze, spearBronze, warhammerBronze};
+		Item[] weaponArray = {battleaxeBronze, boomerangBronze, flailBronze, halberdBronze, katanaBronze, knifeBronze, musketbayonetBronze, spearBronze, warhammerBronze};
         RegisterItems.RegisterRegularWeapon(weaponArray,"bronze",bronzeMaterial,"ingotBronze");
         RegisterItems.CreateWeaponRecipes(weaponArray,"stickWood","ingotBronze");
     }

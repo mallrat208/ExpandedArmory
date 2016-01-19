@@ -1,4 +1,4 @@
-package com.mr208.ExpandedArmory.Thaumcraft.Items;
+package com.mr208.ExpandedArmory.Thaumcraft;
 
 import com.mr208.ExpandedArmory.Items.ExArmItemFlail;
 import net.minecraft.item.EnumRarity;

@@ -1,4 +1,4 @@
-package com.mr208.ExpandedArmory.Thaumcraft.Items;
+package com.mr208.ExpandedArmory.Thaumcraft;
 
 import ckathode.weaponmod.item.MeleeComponent;
 import com.mr208.ExpandedArmory.Items.ExArmItemMusket;

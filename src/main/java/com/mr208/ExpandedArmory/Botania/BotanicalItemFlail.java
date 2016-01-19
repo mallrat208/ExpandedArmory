@@ -1,8 +1,7 @@
-package com.mr208.ExpandedArmory.Botania.Items;
+package com.mr208.ExpandedArmory.Botania;
 
-import ckathode.weaponmod.item.MeleeComponent;
 import com.mr208.ExpandedArmory.Botania.ManaHelper;
-import com.mr208.ExpandedArmory.Items.ExArmItemMelee;
+import com.mr208.ExpandedArmory.Items.ExArmItemFlail;
 import net.minecraft.block.Block;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -12,18 +11,18 @@ import net.minecraft.world.World;
 import vazkii.botania.api.mana.IManaUsingItem;
 import vazkii.botania.api.mana.ManaItemHandler;
 
-
-public class BotanicalItemMelee extends ExArmItemMelee implements IManaUsingItem {
-    public static final int MANA_PER_DMG = 51;
-    public BotanicalItemMelee(String id, MeleeComponent meleecomponent, String repairmaterial) {
-        super(id, meleecomponent,repairmaterial);
+public class BotanicalItemFlail extends ExArmItemFlail implements IManaUsingItem {
+    private static final int MANA_PER_DMG = 51;
+    public BotanicalItemFlail(String id, ToolMaterial toolmaterial, String repairmaterial) {
+        super(id, toolmaterial,repairmaterial);
     }
+
 
     @Override
     public boolean hitEntity(ItemStack itemWeapon, EntityLivingBase targetEntity, EntityLivingBase usingEntity)
     {
-     if(usesMana(itemWeapon)) ManaHelper.damageItem(itemWeapon,1,usingEntity,MANA_PER_DMG);
-     return true;
+        if(usesMana(itemWeapon)) ManaHelper.damageItem(itemWeapon, 1, usingEntity, MANA_PER_DMG);
+        return true;
     }
 
     @Override
