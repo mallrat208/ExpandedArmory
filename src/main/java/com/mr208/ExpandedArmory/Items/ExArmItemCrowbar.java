@@ -6,14 +6,18 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraftforge.oredict.OreDictionary;
 
+import cpw.mods.fml.common.Optional;
+
+@Optional.Interface(iface="mods.railcraft.common.items.ItemCrowbar",modid="Railcraft")
 public class ExArmItemCrowbar extends ItemCrowbar{
 
     private String repairMaterial;
     private String materialName;
 
-    public ExArmItemCrowbar(Item.ToolMaterial tmMaterial,String name,String sMaterial)
+	public ExArmItemCrowbar(Item.ToolMaterial tmMaterial,String name,String sMaterial)
     {
-        super(tmMaterial);
+
+		super(tmMaterial);
         this.materialName = name;
         this.setUnlocalizedName("crowbar."+ name);
         this.repairMaterial = sMaterial;

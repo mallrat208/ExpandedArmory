@@ -69,7 +69,6 @@ public class BotaniaIntegration {
 		if(Loader.isModLoaded("Railcraft")) {
 			crowbarManasteel = new BotanicalItemCrowbar(BotaniaAPI.manasteelToolMaterial, "manasteel", "ingotManasteel").setTextureName("exparmory:manasteel/crowbar.manasteel");
 			GameRegistry.registerItem(crowbarManasteel, "crowbar.manasteel", "exparmory");
-
 			GameRegistry.addRecipe(new ShapedOreRecipe(new ItemStack(crowbarManasteel).copy(), " d#", "d#d", "#d ", 'd', "dyeRed", '#', "ingotManasteel"));
 		}
     }
